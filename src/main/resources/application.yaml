@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: intro-to-spring-boot
+  datasource:
+    url: jdbc:h2:mem:intro_to_spring_boot
+  h2:
+    console:
+      enabled: true
+management:
+    endpoints:
+      web:
+        exposure:
+          include:
+            - health
+            - prometheus
+logging:
+  level:
+    com.athenahealth.vsp.introtospringboot: debug
+
+
